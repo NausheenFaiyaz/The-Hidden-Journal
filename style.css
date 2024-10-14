@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #b473d2;
+  --text-color: #fff;
+  --second-text-color: #000;
+  --third-text-color: rgb(250, 249, 160);
+  --main-color: #e11876;
+}
+body {
+  background-image: url("download\ \(1\).jpeg");
+  background-size: auto;
+  font-family: cursive;
+  background-color: var(--second-text-color);
+  background-size: auto;
+}
+html {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--third-text-color);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--main-color);
+  font-weight: 700;
+  margin: 10px 0;
+}
+.heading-container {
+  text-align: center;
+  padding: 20px;
+}
+#addRecordForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.titleInput {
+  background: #b5ceff;
+  box-shadow: 0 0 15px var(--main-color);
+}
+.datePicker {
+  background: rgb(167, 255, 226);
+  border: 1px solid var(--main-color);
+  box-shadow: 0 0 15px var(--main-color);
+}
+
+.titleInput,
+.datePicker,
+.contentArea {
+  font-size: 16px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.titleInput:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.02) translateY(-0.2px);
+
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.titleInput:focus {
+  transform: scale(1.02) translateY(-0.2px);
+  box-shadow: 0 0 25px var(--main-color);
+}
+.contentArea {
+  background-color: var(--third-text-color);
+  resize: none;
+  width: 500px;
+  height: 300px;
+  border: 2px solid black;
+  font-family: cursive;
+  box-shadow: 0 0 15px var(--third-text-color);
+}
+
+.Btn pre {
+  text-shadow: 2px 2px var(--second-text-color);
+  z-index: 1;
+}
+.Btn pre:hover {
+  text-shadow: 2px 2px var(--main-color);
+  z-index: 1;
+}
+
+.Btn {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.2em 1em;
+  border-radius: 10px;
+  color: rgb(246, 255, 71);
+  font-size: 1.7em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+}
+
+.Btn i:hover {
+  color: var(--third-text-color);
+  text-shadow: 0.5px 0.5px var(--main-color);
+}
+
+.Btn i {
+  font-size: 2rem;
+  color: var(--main-color);
+  z-index: 1;
+}
+
+.linkSection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.linkSection a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(246, 255, 71);
+}
+
+.linkSection a:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1) translateY(-0.3px);
+  color: var(--main-color);
+  text-shadow: 0.5px 0.5px var(--third-text-color);
+}
+.heading button {
+  font-size: 1.3rem;
+  color: purple;
+  background: transparent;
+}
+
+ul {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  list-style: none;
+}
+
+ul .heading {
+  display: flex;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px var(--third-text-color);
+}
+ul .heading .Btn {
+  margin-left: 2rem;
+}
+time {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--third-text-color);
+}
+ul p {
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+  .heading-container {
+    padding: 10px;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .titleInput,
+  .datePicker,
+  .contentArea,
+  form .Btn {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  .contentArea {
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+  }
+  .Btn {
+    font-size: 1.5rem;
+  }
+  .Btn i {
+    font-size: 1.7rem;
+  }
+  .linkSection {
+    margin: 5px;
+  }
+  .linkSection a {
+    font-size: 1.3rem;
+  }
+  .container {
+    max-width: 90%;
+    padding: 0 5px;
+  }
+  ul {
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  ul .heading {
+    font-size: 2rem;
+    margin: 2px 0;
+  }
+  time {
+    font-size: 1.2rem;
+  }
+  ul p {
+    margin: 5px 0;
+    font-size: 1.3rem;
+  }
+  ul .heading .Btn {
+    margin-left: 2rem;
+    padding: 4px;
+  }
+  .notFound {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 250px) {
+  .heading-container {
+    padding: 10px;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .titleInput,
+  .datePicker,
+  .contentArea,
+  form .Btn {
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+
+  .contentArea {
+    width: 280px;
+    height: 300px;
+    border: 2px solid black;
+  }
+  .Btn i {
+    font-size: 1.5rem;
+  }
+  .linkSection {
+    margin: 5px;
+  }
+  .linkSection a {
+    font-size: 1.2rem;
+  }
+  .container {
+    max-width: 90%;
+    padding: 0 5px;
+  }
+  ul {
+    border-radius: 1rem;
+    padding: 0.2rem;
+  }
+  ul .heading {
+    font-size: 1.7rem;
+    margin: 2px 0;
+  }
+  time {
+    font-size: 1.1rem;
+  }
+  ul p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  ul .heading .Btn {
+    margin-left: 1rem;
+    padding: 2.5px;
+  }
+  .notFound {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Diary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="heading-container">
+      <h1 class="heading">The Hidden Journal</h1>
+    </header>
+    <main>
+      <form id="addRecordForm">
+        <input
+          type="text"
+          placeholder="Enter the title here..."
+          class="titleInput"
+        />
+        <input type="date" class="datePicker" />
+        <textarea
+          cols="30"
+          rows="10"
+          class="contentArea"
+          placeholder="Write memories :)"
+        ></textarea>
+        <button type="submit" class="Btn">
+          <i class="fa-solid fa-folder-plus"></i>
+          <pre><p> Add to Diary </p></pre>
+        </button>
+      </form>
+      <section class="linkSection">
+        <a href="Diary.html">View All Diary Records</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
